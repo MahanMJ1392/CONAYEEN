@@ -1,187 +1,61 @@
 @font-face {
     font-family: font;
-    src: url('Yekan-Bakh-FaNum-05-Medium.woff');
+    src: url('../Yekan-Bakh-FaNum-05-Medium.woff');
 }
 *{
 font-family: font;
 }
-body{
+
+body {
+    text-align: center;
     background-color: #18161c;
 }
-input {
-    
-        position: absolute;
-        top:  25%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    border:     none;
+#clock {
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+}
+
+#clock > div {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #26242a;
+}
+
+#clock div > span {
+    padding: 10px;
+    border-radius: 5px;
     background-color: #ff0079;
-    box-shadow:0px 0px 24px #ff00795c; ;
-    border-radius: 10px;
-    width: 580px;
-    height: 45px;
-    transition: 0.3s;
+    display: inline-block;
+    box-shadow: 0px 0px 24px #ff00795c;
 }
-#subjectInput:focus{
-    outline: none;
+small{
+    padding-top: 5px;
+    font-size: 0.9em;
 }
-#subjectInput:hover{
-    transition: 0.3s;
-    width: 583;
-    height: 47px;
-    position: absolute;
-    top:  25%;
+
+input {
+    font-size: 1.5em;
+    margin: 25px;
+    border-radius: 5px;
+    background: #26242a;
+    border: none;
+    color: #ff0079;
+    padding: 10px;
+}
+#hint{
+    bottom: -33;
     left: 50%;
     transform: translate(-50%,-50%);
-}
-#subjectInput::placeholder{
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-}
-
-#proprtiesInput {
-    
-    position: absolute;
-    top:  42%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-border-radius: 10px;
-width: 580px;
-height: 45px;
-transition: 0.3s;
-}
-#proprtiesInput:focus{
-outline: none;
-}
-#proprtiesInput:hover{
-transition: 0.3s;
-width: 583;
-height: 47px;
-position: absolute;
-top:  42%;
-left: 50%;
-transform: translate(-50%,-50%);
-}
-#proprtiesInput::placeholder{
-color: rgb(0, 0, 0);
-font-size: 18px;
-}
-
-#proprtiesInput {
-    
-    position: absolute;
-    top:  42%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-border-radius: 10px;
-width: 580px;
-height: 45px;
-transition: 0.3s;
-}
-#proprtiesInput:focus{
-outline: none;
-}
-#proprtiesInput:hover{
-transition: 0.3s;
-width: 583;
-height: 47px;
-position: absolute;
-top:  42%;
-left: 50%;
-transform: translate(-50%,-50%);
-}
-#proprtiesInput::placeholder{
-color: rgb(0, 0, 0);
-font-size: 18px;
-}
-
-
-#phonecallInput {
-    
-    position: absolute;
-    top:  59%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-border-radius: 10px;
-width: 580px;
-height: 45px;
-transition: 0.3s;
-}
-#phonecallInput:focus{
-outline: none;
-}
-#phonecallInput:hover{
-transition: 0.3s;
-width: 583;
-height: 47px;
-position: absolute;
-top:  59%;
-left: 50%;
-transform: translate(-50%,-50%);
-}
-#phonecallInput::placeholder{
-color: rgb(0, 0, 0);
-font-size: 18px;
-}
-
-
-
-#ChannelId {
-    
-    position: absolute;
-    top:  91%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-border-radius: 10px;
-width: 580px;
-height: 45px;
-transition: 0.3s;
-}
-#ChannelId:focus{
-outline: none;
-}
-#ChannelId:hover{
-transition: 0.3s;
-width: 583;
-height: 47px;
-position: absolute;
-top:  91%;
-left: 50%;
-transform: translate(-50%,-50%);
-}
-#ChannelId::placeholder{
-color: rgb(0, 0, 0);
-font-size: 18px;
-}
-
-
-
-#Chid {
-    
-    position: absolute;
-    top:  75%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-border-radius: 10px;
-width: 580px;
-height: 45px;
-transition: 0.3s;
-}
-#Chid:focus{
-outline: none;
-}
-#Chid:hover{
-transition: 0.3s;
-width: 583;
-height: 47px;
-position: absolute;
-top:  76%;
-left: 50%;
-transform: translate(-50%,-50%);
-}
-#Chid::placeholder{
-color: rgba(0, 0, 0, 0.762);
-font-size: 18px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #1c1b1e;
+    color: #5c5c5c;
+    width: 45%;
+    border-radius: 5px;
 }
